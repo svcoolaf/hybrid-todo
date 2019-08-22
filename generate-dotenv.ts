@@ -1,5 +1,5 @@
-import * as fs from "fs";
-import * as path from "path";
+const fs = require("fs");
+const path = require("path");
 
 /**
  * Generates default .env file as key=value pairs from {@link DEFAULTS}

@@ -13,10 +13,3 @@ export function get<T, V extends T[keyof T]>(property: keyof T): (obj: T) => V {
 export const throwException = exception => {
   throw exception;
 };
-
-export const minMaxReducer = (
-  [min, max]: [number, number],
-  pm: number
-): [number, number] => {
-  return [pm < min ? pm : min, pm > max ? pm : max];
-};

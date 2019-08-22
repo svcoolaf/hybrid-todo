@@ -11,9 +11,3 @@ export interface Model {
   id: number;
   toString?: (instance: Model) => string;
 }
-
-export abstract class DefaultModel {
-  protected constructor(obj: Model) {
-    Object.assign(this, obj);
-  }
-}

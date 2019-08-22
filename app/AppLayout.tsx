@@ -13,7 +13,7 @@ interface Props {
   query?: BaseExpectedQuery;
 }
 
-function AppLayout({ page, title = "404", children, query, ...props }: Props) {
+function AppLayout({ page, title = "404", children, query }: Props) {
   return (
     <>
       <Head>
