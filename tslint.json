@@ -1,0 +1,19 @@
+{
+  "extends": ["tslint:recommended", "tslint-config-prettier"],
+  "linterOptions": {
+    "exclude": [".next/**/*", "node_modules/**/*"]
+  },
+  "rules": {
+    "object-literal-sort-keys": false,
+    "no-namespace": false,
+    "member-access": false,
+    "variable-name": false,
+    "max-classes-per-file": [false],
+    "interface-name": ["never-prefix"],
+    "no-empty-interface": false,
+    "no-console": [false],
+    "no-var-requires": false,
+    "no-misused-new": false,
+    "no-empty": false
+  }
+}
