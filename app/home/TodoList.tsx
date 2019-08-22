@@ -4,7 +4,7 @@ import { Model } from "../common/models/Model";
 import { Todo } from "../common/models/Todo";
 import Check from "./Check";
 
-const Home = () => {
+const TodoList = () => {
   const [createJob] = useMutation<any, Partial<Todo>>(Todo.create);
   const [markAsComplete] = useMutation<any, Partial<Todo>>(Todo.update);
   const [deleteJob] = useMutation<any, Model>(Todo.delete);
@@ -52,6 +52,7 @@ const Home = () => {
       </form>
       {allJobs.nodes.map((job: Todo, i) => (
         <div key={job.id}>
+          {i + 1}:
           <Check
             onClick={() => {
               markAsComplete({
@@ -60,7 +61,7 @@ const Home = () => {
             }}
             checked={job.complete}
           />
-          {i + 1}: {job.content}
+          {job.content}
           <button
             onClick={() => {
               deleteJob({
@@ -76,4 +77,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default TodoList;
