@@ -1,6 +1,11 @@
 import React from "react";
+import theme from "../common/lib/theme";
 
-const Icon = ({ name, width = 16, height = 16 }) => (
+const Icon = ({
+  name,
+  width = theme.sizes.icon,
+  height = theme.sizes.icon
+}) => (
   <img
     src={`/static/icons/${name}.svg`}
     width={width}

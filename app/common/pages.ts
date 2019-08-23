@@ -5,15 +5,11 @@ interface Page {
 }
 
 export const PAGES_MAP: {
-  [key in "home" | "todo"]: Page;
+  [key in "home"]: Page;
 } = {
   home: {
     page: "",
     title: "home"
-  },
-  todo: {
-    page: "/todo",
-    title: "todo"
   }
 };
 
