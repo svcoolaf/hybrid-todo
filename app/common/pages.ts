@@ -12,5 +12,3 @@ export const PAGES_MAP: {
     title: "home"
   }
 };
-
-export const PAGES: Page[] = Object.values(PAGES_MAP);

@@ -1,6 +1,8 @@
-import React from "react";
+import { useMutation } from "@apollo/react-hooks";
+import React, { useState } from "react";
 import styled from "styled-components";
 import theme from "../common/lib/theme";
+import { Todo } from "../common/models/Todo";
 import Icon from "./Icon";
 
 const Form = styled.form`
@@ -31,21 +33,37 @@ const Clickable = styled.button`
   background: transparent;
 `;
 
-const FloatingForm = ({ onFormSubmit, content, setContent }) => (
-  <Floating>
-    <Form onSubmit={onFormSubmit}>
-      <Clickable onClick={onFormSubmit}>
-        <Icon name="plus" />
-      </Clickable>
-      <Input
-        value={content}
-        onChange={e => {
-          setContent(e.target.value);
-        }}
-        placeholder="Add todo"
-      />
-    </Form>
-  </Floating>
-);
+const FloatingForm = ({ triggerFetch }) => {
+  const [createJob] = useMutation<any, Partial<Todo>>(Todo.create);
+  const [content, setContent] = useState("");
+  const onFormSubmit = e => {
+    e.preventDefault();
+    if (!content) {
+      return;
+    }
+    createJob({
+      variables: { content }
+    }).then(() => {
+      setContent("");
+      triggerFetch();
+    });
+  };
+  return (
+    <Floating>
+      <Form onSubmit={onFormSubmit}>
+        <Clickable onClick={onFormSubmit}>
+          <Icon name="plus" />
+        </Clickable>
+        <Input
+          value={content}
+          onChange={e => {
+            setContent(e.target.value);
+          }}
+          placeholder="Add todo"
+        />
+      </Form>
+    </Floating>
+  );
+};
 
 export default FloatingForm;

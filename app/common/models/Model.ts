@@ -1,9 +1,3 @@
-export enum Operation {
-  create = "create",
-  update = "update",
-  delete = "delete"
-}
-
 export interface Model {
   create?: () => void;
   delete?: () => void;
