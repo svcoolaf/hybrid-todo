@@ -3,8 +3,8 @@ import styled from "styled-components";
 import theme from "../common/lib/theme";
 
 const Background = styled.div`
-  padding: ${theme.sizes.quadruple}px;
-  padding-top: 50px;
+  padding: ${2 * theme.sizes.form}px ${theme.sizes.quadruple}px
+    ${theme.sizes.quadruple}px;
   background-size: cover;
   background: linear-gradient(#7d8ca0, #506eb4);
   color: ${theme.colors.lightest};

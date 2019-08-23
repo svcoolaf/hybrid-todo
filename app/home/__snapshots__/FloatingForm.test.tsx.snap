@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FloatingForm renders 1`] = `
+<div
+  className="FloatingForm__Floating-sc-6zf4dp-2 ggdTjX"
+>
+  <form
+    className="FloatingForm__Form-sc-6zf4dp-0 bVzonV"
+    onSubmit={[Function]}
+  >
+    <button
+      className="FloatingForm__Clickable-sc-6zf4dp-3 evHQIf"
+      onClick={[Function]}
+    >
+      <img
+        alt="plus"
+        height={24}
+        src="/static/icons/plus.svg"
+        width={24}
+      />
+    </button>
+    <input
+      className="FloatingForm__Input-sc-6zf4dp-1 eolwPR"
+      onChange={[Function]}
+      placeholder="Add todo"
+      value=""
+    />
+  </form>
+</div>
+`;

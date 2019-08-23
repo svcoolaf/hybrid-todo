@@ -1,13 +1,11 @@
-import "isomorphic-fetch";
 import Head from "next/head";
 import React from "react";
 
-import { ApolloProvider } from "@apollo/react-hooks";
-import ApolloClient from "apollo-boost";
 import styled, { ThemeProvider } from "styled-components";
 import Page, { BaseExpectedQuery } from "./common/context/Page";
 import { capitalize } from "./common/lib/string-utils";
 import theme from "./common/lib/theme";
+import WithApollo from "./WithApollo";
 
 interface Props {
   title?: string;
@@ -34,11 +32,11 @@ function AppLayout({ page, title = "404", children, query }: Props) {
         <link rel="stylesheet" href="/static/reset.css" />
         <link rel="stylesheet" href="/static/main.css" />
       </Head>
-      <ApolloProvider client={new ApolloClient({ uri: "/graphql" })}>
+      <WithApollo>
         <ThemeProvider theme={theme}>
           <Page.Provider value={{ page, query }}>{children}</Page.Provider>
         </ThemeProvider>
-      </ApolloProvider>
+      </WithApollo>
     </Background>
   );
 }

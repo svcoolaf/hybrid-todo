@@ -13,19 +13,21 @@ const Form = styled.form`
   background: ${theme.colors.white};
   padding-left: ${theme.sizes.quadruple}px;
 `;
+
 const Input = styled.input`
-  margin: 0;
-  margin-left: ${theme.sizes.double}px;
+  margin: 0 0 0 ${theme.sizes.double}px;
   padding: ${theme.sizes.double}px;
   border: 0;
   flex-grow: 1;
   line-height: ${theme.sizes.form}px;
 `;
+
 const Floating = styled.div`
   position: fixed;
   bottom: 0;
   border-top: 1px ${theme.colors.light} solid;
 `;
+
 const Clickable = styled.button`
   cursor: pointer;
   padding: 0;

@@ -42,15 +42,16 @@ const Content = styled.span`
   padding: ${theme.sizes.double}px;
   display: block;
 `;
-const TodoList = ({ triggerFetch, update }) => {
+
+const TodoList = ({ triggerFetch, fetchHash }) => {
   const [updateTodo] = useMutation<any, Partial<Todo>>(Todo.update);
   const [deleteJob] = useMutation<any, Model>(Todo.delete);
   const { loading, data, error, refetch } = useQuery(Todo.getAll);
-  const todos = (data.allJobs || {}).nodes;
+  const todos = (data.allJobs || { nodes: [] }).nodes;
 
   useEffect(() => {
     refetch();
-  }, [update]);
+  }, [fetchHash]);
 
   if (loading) {
     return <p>Loading...</p>;

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hero renders 1`] = `
+<div
+  className="Hero__Background-hkp9da-0 dZrZsG"
+>
+  <h1
+    className="Hero__H1-hkp9da-1 gEoyCq"
+  >
+    Today
+  </h1>
+  <h2
+    className="Hero__H2-hkp9da-2 cNMwov"
+  >
+    Friday, August 23
+  </h2>
+</div>
+`;

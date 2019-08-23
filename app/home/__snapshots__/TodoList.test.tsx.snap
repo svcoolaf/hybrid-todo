@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoList renders 1`] = `
+Array [
+  <div
+    className="TodoList__TodoItem-m2x2f9-2 ksHrKr"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    tabIndex={0}
+  >
+    <div
+      className="TodoList__Left-m2x2f9-1 bJSXil"
+    >
+      <button
+        checked={false}
+        className="Check__RoundButton-sc-1sbkphr-0 yCVmH"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="Check__Placeholder-sc-1sbkphr-1 jCOvgI"
+        />
+      </button>
+      <span
+        className="TodoList__Content-m2x2f9-3 fHTCag"
+      >
+        1
+      </span>
+    </div>
+    <button
+      className="delete-button TodoList__DeleteButton-m2x2f9-0 hyDOLv"
+      onClick={[Function]}
+      tabIndex={0}
+    >
+      <img
+        alt="cross"
+        height={24}
+        src="/static/icons/cross.svg"
+        width={24}
+      />
+    </button>
+  </div>,
+  <div
+    className="TodoList__TodoItem-m2x2f9-2 ksHrKr"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    tabIndex={0}
+  >
+    <div
+      className="TodoList__Left-m2x2f9-1 bJSXil"
+    >
+      <button
+        checked={false}
+        className="Check__RoundButton-sc-1sbkphr-0 yCVmH"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="Check__Placeholder-sc-1sbkphr-1 jCOvgI"
+        />
+      </button>
+      <span
+        className="TodoList__Content-m2x2f9-3 fHTCag"
+      >
+        2
+      </span>
+    </div>
+    <button
+      className="delete-button TodoList__DeleteButton-m2x2f9-0 hyDOLv"
+      onClick={[Function]}
+      tabIndex={0}
+    >
+      <img
+        alt="cross"
+        height={24}
+        src="/static/icons/cross.svg"
+        width={24}
+      />
+    </button>
+  </div>,
+  <div
+    className="TodoList__TodoItem-m2x2f9-2 ksHrKr"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    tabIndex={0}
+  >
+    <div
+      className="TodoList__Left-m2x2f9-1 bJSXil"
+    >
+      <button
+        checked={false}
+        className="Check__RoundButton-sc-1sbkphr-0 yCVmH"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="Check__Placeholder-sc-1sbkphr-1 jCOvgI"
+        />
+      </button>
+      <span
+        className="TodoList__Content-m2x2f9-3 fHTCag"
+      >
+        3
+      </span>
+    </div>
+    <button
+      className="delete-button TodoList__DeleteButton-m2x2f9-0 hyDOLv"
+      onClick={[Function]}
+      tabIndex={0}
+    >
+      <img
+        alt="cross"
+        height={24}
+        src="/static/icons/cross.svg"
+        width={24}
+      />
+    </button>
+  </div>,
+]
+`;
