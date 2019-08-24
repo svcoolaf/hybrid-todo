@@ -1,6 +1,6 @@
 ## Summary
 
-This is a demo app that has todo-list functionality.
+This is a demo todo-app.
 
 ### Dependencies
 
