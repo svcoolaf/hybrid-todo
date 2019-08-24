@@ -13,7 +13,15 @@ To restore make sure you have database called `shasher` and run `psql shasher < 
 
 ### Setup
 
-0. Run `nvm use` to switch to project node
+0. Run `nvm use` to switch to project node 10.16.0
 1. Run `yarn` to install dependencies and generate .env file.
-1. Run `yarn start` to run application.
-1. Go to `http://localhost:3001` using your favorite browser.
+2. Run `yarn start` to run application.
+3. Go to `http://localhost:3001` using your favorite browser.
+
+### Browsers tested
+
+ Safari 12
+ Chrome 76
+ Mobile Safari 12
+ Firefox 68
+ 
