@@ -20,8 +20,8 @@ To restore make sure you have database called `shasher` and run `psql shasher < 
 
 ### Browsers tested
 
- Safari 12
- Chrome 76
- Mobile Safari 12
- Firefox 68
+- Safari 12
+- Chrome 76
+- Mobile Safari 12
+- Firefox 68
  
