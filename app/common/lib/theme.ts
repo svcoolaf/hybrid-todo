@@ -1,9 +1,8 @@
-const themeWhite = "#ffffff";
 const unit = 4;
 
 const theme = {
   colors: {
-    white: themeWhite,
+    white: "#ffffff",
     lightest: "#f7f7f7",
     light: "#e0e0e0",
     dim: "#cccccc"
